@@ -11,34 +11,34 @@ document.querySelector("#submitbutton").addEventListener("click",function(e){
         case "repeat":
             if(!repeats(setElements,subsetSize)){
                 document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: Not Possible`;
-                document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: Not Possible`;  
+                document.querySelector("#rand-ex").innerHTML=`Random Example: Not Possible`;  
             }else{
             document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: ${repeats(setElements,subsetSize)}=\\(${setElements}^{${subsetSize}}\\)`;
-            document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: ${JSON.stringify(randomRepeat(setElements,subsetSize))}`;}
+            document.querySelector("#rand-ex").innerHTML=`Random Example: ${JSON.stringify(randomRepeat(setElements,subsetSize))}`;}
             break;
         case "permutation":
             if(!permutations(setElements,subsetSize)){
                 document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: Not Possible`;
-                document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: Not Possible`;  
+                document.querySelector("#rand-ex").innerHTML=`Random Example: Not Possible`;  
             }else{
             document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: ${permutations(setElements,subsetSize)}=\\(\\frac{${setElements}!}{${subsetSize}!}\\)`;
-            document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: ${JSON.stringify(randomPermutation(setElements,subsetSize))}`;}
+            document.querySelector("#rand-ex").innerHTML=`Random Example: ${JSON.stringify(randomPermutation(setElements,subsetSize))}`;}
             break;        
         case "combination":
             if(!combinations(setElements,subsetSize)){
                 document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: Not Possible`;
-                document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: Not Possible`;  
+                document.querySelector("#rand-ex").innerHTML=`Random Example: Not Possible`;  
             }else{
             document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: ${combinations(setElements,subsetSize)}=\\(\\frac{${setElements}!}{${subsetSize}!${setElements-subsetSize}!}\\)`;
-            document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: ${JSON.stringify(randomCombination(setElements,subsetSize))}`;}
+            document.querySelector("#rand-ex").innerHTML=`Random Example: ${JSON.stringify(randomCombination(setElements,subsetSize))}`;}
             break;     
         case "multiset":
             if(!multisets(setElements,subsetSize)){
                 document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: Not Possible`;
-                document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: Not Possible`;  
+                document.querySelector("#rand-ex").innerHTML=`Random Example: Not Possible`;  
             }else{
             document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: ${multisets(setElements,subsetSize)}=\\(\\binom{${setElements+subsetSize-1}}{${setElements-1}}\\)`;
-            document.querySelector("#rand-ex").innerHTML=`Total Number of Possibilities: ${JSON.stringify(randomMultiset(setElements,subsetSize))}`;
+            document.querySelector("#rand-ex").innerHTML=`Random Example: ${JSON.stringify(randomMultiset(setElements,subsetSize))}`;
             if(setElements==0){
                 document.querySelector("#possibilities").innerHTML=`Total Number of Possibilities: ${multisets(setElements,subsetSize)}`;
             }}
