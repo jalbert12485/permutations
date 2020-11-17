@@ -1,0 +1,32 @@
+body{
+    position: relative;
+}
+
+#back-img{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+    z-index: -1;
+}
+
+.aboutcont{
+    padding: 30px;
+    margin: 8% 5% 8% 5%;
+  
+}
+
+main{
+    background-color: lightgray;
+}
+
+.boxheader{
+    width: 100%;
+    color: purple;
+    border-bottom: 2px solid purple;
+}
+#submitbutton{
+    background-color: purple;
+}
+
