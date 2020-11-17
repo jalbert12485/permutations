@@ -44,12 +44,16 @@ function permutations(n,k){
 }
 
 function combinations(n,k){
+    n=Number(n);
+    k=Number(k);
     if(permutations(n,k)){
         return permutations(n,k)/factorial(k);
     }else{ return false;}
 }
 
 function multisets(n,k){
+    n=Number(n);
+    k=Number(k);
     if(!factorial(n) || !factorial(k)){
         return false;
     }
@@ -61,6 +65,8 @@ function multisets(n,k){
 
 
 function randomPermutation(n,k){
+    n=Number(n);
+    k=Number(k);
     if(!(permutations(n,k))){
         return false;
     }
@@ -101,6 +107,8 @@ function sortAscending(array){
 }
 
 function randomCombination(n,k){
+    n=Number(n);
+    k=Number(k);
     if(!(permutations(n,k))){
         return false;
     }
@@ -108,6 +116,8 @@ function randomCombination(n,k){
 }
 
 function randomRepeat(n,k){
+    n=Number(n);
+    k=Number(k);
     if( !Number.isInteger(n) || !Number.isInteger(k) || n < 0 || k < 0){
         return false;
     }
@@ -129,6 +139,8 @@ function randomRepeat(n,k){
 }
 
 function randomMultiset(n,k){
+    n=Number(n);
+    k=Number(k);
     if(!randomRepeat(n,k)){
         return false;
     }
