@@ -5,23 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap css -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <!-- Boostrap javascript -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
     <!-- Local css -->
     <link rel="stylesheet" href="style.css">
-    <title>About Me</title>
+    <script type="text/javascript" async src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML">
+    </script>
+
+    <title>Counting</title>
 </head>
 <body>
 
     <img src="table.jpg" alt="Roulette Table" id="back-img" /> 
 
      <!-- Navbar code  -->
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: purple;">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
 
 
-        <a class="navbar-brand" href="#">Permutations and Combinations</a>
+        <a class="navbar-brand" href="#">Combinatorial Counting</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -43,6 +43,8 @@
 
 
 
+  
+
       <!-- Form to input choices -->
       <main class="container mr-auto ml-auto p-4" >
         <form>
@@ -57,14 +59,13 @@
           <div class="form-group">
             <label for="count-type"><h2>Choose randomization type<h2></label>
             <select class="form-control" id="count-type">
-              <option value="repeat">Choose a randomization type.</option>
               <option value="repeat">Repeated Results (allows repeat and order matters).</option>
               <option value="permutation">Permutation (no repeat and order matters).</option>
               <option value="combination">Combination (no repeat, order does not matter).</option>
               <option value="multiset">Multiset (allows repeat, order does not matter).</option>
             </select>
           </div>
-          <button type="submit" id="submitbutton" class="btn btn-primary">Submit</button>
+          <button type="submit" id="submitbutton" class="btn btn-dark bg-dark">Submit</button>
         </form>
 
 
@@ -80,6 +81,7 @@
 
 
   <script src="script.js"></script>
+
 
 </body>
 </html>
